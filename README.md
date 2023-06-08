@@ -39,7 +39,7 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This site was created as a submission to a [frontendmentor](https://frontendmentor.io/challenges) challenge. The [challenge](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) to build out this landing page and get it looking as close to the design as possible.
+This site was created as a submission to a [frontendmentor](https://frontendmentor.io/challenges) challenge. The [challenge](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) was to build out this landing page and get it looking as close to the design as possible.
 
 The users should be able to:
 
