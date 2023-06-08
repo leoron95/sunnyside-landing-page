@@ -1,0 +1,58 @@
+---
+import FacebookIcon from './Icons/FacebookIcon.astro';
+import InstagramIcon from './Icons/InstagramIcon.astro';
+import TwitterIcon from './Icons/TwitterIcon.astro';
+import PinterestIcon from './Icons/PinterestIcon.astro';
+import Logo from './Logo.astro'
+---
+<footer class="bg-[#90D4C5] pb-20 pt-[60px]">
+    <div class="flex justify-center ">
+        <Logo color='#25564B'/>
+    </div>
+    
+    <div class="pt-10">
+        <ul class="flex justify-center  gap-[30px] xl:gap-[40px] [&>li>a]:text-[#25564B] [&>li>a]:text-base xl:[&>li>a]:text-lg [&>li>a]:font-bold ">
+            <li>
+                <a class="hover:text-white transition-colors ease-in-out" href="">About</a>
+            </li>
+            <li>
+                <a class="hover:text-white transition-colors ease-in-out" href="">Services</a>
+            </li>
+            <li>
+                <a class="hover:text-white transition-colors ease-in-out" href="">Projects</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pt-24">
+        <ul class="flex justify-center gap-[30px] [&>li>a]:fill-[#2C7566]">
+            <li >
+                <a  href="#" class="hover:fill-white transition-colors ease-in-out">
+                    <FacebookIcon/>
+                </a>
+            </li>
+            <li>
+                <a class="hover:fill-white transition-colors ease-in-out" href="#">
+                    <InstagramIcon/>
+                </a>
+            </li>
+            <li>
+                <a class="hover:fill-white transition-colors ease-in-out" href="#">
+                    <TwitterIcon/>
+                </a>
+            </li>
+            <li>
+                <a class="hover:fill-white transition-colors ease-in-out" href="#">
+                    <PinterestIcon/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<style>
+
+    a{
+        font-family: 'Barlow';
+    }
+</style>

@@ -1,0 +1,66 @@
+---
+
+const clients = [
+    {
+        avatar: '/images/image-emily.jpg',
+        name: 'Emily R.',
+        testimonial: 'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
+        work: 'Marketing Director'
+    },
+    {
+        avatar: '/images/image-thomas.jpg',
+        name: 'Thomas S.',
+        testimonial: 'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
+        work: 'Chief Operation Officer'
+    },
+    {
+        avatar: '/images/image-jennie.jpg',
+        name: 'Jennie F.',
+        testimonial: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside.Highly recommended!',
+        work: 'Business Owner'
+    }
+]
+---
+
+<section>
+    <div class="pb-[90px] pt-[66px] lg:pt-[166px]">
+        <h2 class="uppercase text-center  tracking-[0.3rem] mb-[62px] lg:mb-[86px]  font-bold text-base lg:text-xl  text-[#A7ABAE]">Client testimonials</h2>
+
+        <div class="flex flex-col min-h-min lg:flex-row lg:justify-center gap-[66px] lg:gap-[60px] 2xl:gap-20">
+
+        {
+            clients.map(({avatar, name, testimonial, work}) => (
+
+            <div class="flex flex-col items-center justify-between gap-[30px] lg:gap-12">
+
+                <div class="flex flex-col items-center gap-7 lg:gap-10">
+                    <img class="rounded-full w-[82px] h-[82px]" src={avatar} alt="" loading="lazy">
+                    <p class="max-w-[300px] text-center text-base font-semibold  text-[#5A636C]">{testimonial}</p>
+                </div>
+            
+
+                <div class="flex flex-col gap-2.5 text-center">
+                    <h2 class="font-black text-base leading-[19px] text-[#23303E]">{name}</h2>
+                    <p class="font-semibold text-sm leading-3 text-[#A7ABAE]">{work}</p>
+                </div>
+
+            </div>
+
+            ))
+        }
+
+        </div>
+    </div>
+</section>
+
+
+<style>
+    h2{
+        font-family: 'Fraunces';
+    }
+
+    p{
+        font-family: 'Barlow';
+    }
+
+</style>

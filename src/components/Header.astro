@@ -1,0 +1,103 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<header class="bg-[url('/images/mobile/image-header.jpg')] md:bg-[url('/images/desktop/image-header.jpg')] bg-cover bg-center   h-[508px] lg:h-[800px] w-full  bg-no-repeat ">
+        
+    <nav class="flex flex-row w-full justify-between items-center pt-8 px-6 lg:pl-10 lg:pr-[50px]">
+        <div>
+            <Logo color='white' />
+        </div>
+
+        <div class="hidden lg:flex flex-row gap-[60px] items-center">
+            <ul class="flex flex-row gap-[50px] [&>li>a]:text-white [&>li>a]:font-semibold [&>li>a]:text-xl hover:text-[#23303E]">
+                <li>
+                    <a class="hover:text-[#23303E] transition-colors ease-in-out" href="">About</a>
+                </li>
+                <li>
+                    <a class="hover:text-[#23303E] transition-colors ease-in-out" href="">Services</a>
+                </li>
+                <li>
+                    <a class="hover:text-[#23303E] transition-colors ease-in-out" href="">Projects</a>
+                </li>
+            </ul>
+
+            <button id="contactBtn" class="py-[18px] px-[27px] bg-white rounded-full text-[#23303E] text-base font-semibold uppercase hover:bg-[#6fcfff] hover:text-white transition-colors ease-in-out">
+                Contact
+            </button>
+        </div>
+        <button class="lg:hidden" id='menuBtn'>
+            <img src="/images/icon-hamburger.svg" alt="" srcset="">
+        </button>
+    </nav>
+
+    <div id="menu" class=' hidden relative z-10'>
+        <div class="px-5 pt-5 w-full absolute">
+            
+            <div class="flex flex-row justify-end ">
+                <div class="triangle"></div>
+            </div>
+
+            <div class=" bg-white flex flex-col items-center gap-7 py-10">
+                <ul class=" flex flex-col items-center gap-7 [&>li>a]:text-lg [&>li>a]:font-semibold [&>li>a]:text-[#a7abae]">
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                    </li>
+                    <li>
+                        <a href="">Projects</a>
+                    </li>
+                </ul>
+
+                <button class="bg-[#fad400] font-bold menuBtn rounded-full text-sm px-7 py-4 items-center uppercase">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col  items-center pt-[86px] xl:pt-[129px]">
+        <h1 class="uppercase  title text-white font-black text-4xl xl:text-5xl tracking-[9px]  text-center  px-4">we are creatives</h1>
+        
+        <div class="pt-[34px] xl:pt-[69px] ">
+            <img class="h-[138px] animate-bounce" src="/images/icon-arrow-down.svg" alt="">
+        </div>
+    </div>
+</header>
+
+<style>
+
+h1, #contactBtn, .menuBtn {
+    font-family: 'Fraunces';
+}
+
+a{
+    font-family: 'Barlow';
+}
+
+.triangle {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0 30px 30px;
+	border-color: transparent transparent white transparent;
+	transform: rotate(0deg);
+}
+</style>
+
+<script>
+	const btn = document.querySelector('#menuBtn');
+	const menu = document.querySelector('#menu')
+
+	const toggleMenu = () => {
+		if(menu.classList.contains('hidden')) {
+			menu.classList.remove('hidden')
+		} else {
+			menu.classList.add('hidden')
+		}
+	}
+
+	btn.addEventListener('click',toggleMenu)
+
+
+</script>

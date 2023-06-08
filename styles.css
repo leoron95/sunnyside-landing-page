@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --yellow: #fad400;
+  --pinkishred: #fe7563;
+  --applegreen: #458c7e;
+  --darkgreen: #25564b;
+  --skyblue: #3da1cb;
+  --darkblue: #19536b;
+  --black: #000000;
+  --bluishblack: #23303e;
+  --lightgrey: #a7abae;
+  --darkgrey: #5a636c;
+}
+
+*,
+a {
+  max-width: 1440px;
+  color: var(--black);
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.top-content {
+  background-image: url("./images/mobile/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 40px 25px 40px 25px;
+}
+
+.nav-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left-side {
+  margin-left: 0px;
+}
+.logo img {
+  height: 28px;
+  width: 123px;
+}
+.right-side {
+  margin-right: 0px;
+}
+.right-side .nav-items {
+  display: none;
+}
+.right-side .menu-icon img {
+  height: 18px;
+  width: 24px;
+}
